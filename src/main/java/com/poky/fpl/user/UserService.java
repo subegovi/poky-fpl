@@ -1,6 +1,5 @@
 package com.poky.fpl.user;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +12,6 @@ public class UserService {
 	private UserRepository userRepo;
 
 	public List<User> getAllUsers() {
-		List<User> userList = new ArrayList<>();
-		userList = (List<User>) userRepo.findAll();
-		return userList;
+		return (List<User>) userRepo.findAll();
 	}
 }
