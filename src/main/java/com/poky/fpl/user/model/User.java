@@ -1,4 +1,4 @@
-package com.poky.fpl.user;
+package com.poky.fpl.user.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
