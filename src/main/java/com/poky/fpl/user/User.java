@@ -1,7 +1,5 @@
 package com.poky.fpl.user;
 
-import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -30,7 +28,9 @@ public class User {
 	@Column(name = "phone")
 	private String phoneNumber;
 	@Column(name = "verified")
-	private String iSverified;
+	private String isVerified;
+	@Column(name = "admin")
+	private String isAdmin;
 	@Column(name = "verification_token")
 	private String verificationToken;
 
